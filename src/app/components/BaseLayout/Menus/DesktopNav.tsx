@@ -1,6 +1,6 @@
+"use client";
 import Image from "next/image";
 import styles from "@/app/styles/Nav.module.css";
-import { aeonik } from "@/app/fonts";
 
 const DesktopNav = () => {
   return (
@@ -16,7 +16,7 @@ const DesktopNav = () => {
             src="/images/eazipaylogo.svg"
           />
         </h1>
-        <ul className="text-eaziDark ml-12">
+        <ul className="text-eaziDark ml-10">
           <li>Individual</li>
           <li>Business</li>
           <li>Pricing</li>

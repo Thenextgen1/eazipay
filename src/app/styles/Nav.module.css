@@ -6,6 +6,27 @@
     display: none;
 }
 
+
+
+
+
+.mobile_menu_list {
+    @apply absolute h-screen w-screen flex flex-col justify-center items-center top-0 left-0;
+    background-color: #F3F8F6;
+    z-index: 10;
+}
+
+.mobile_menu_list li {
+    @apply text-center
+}
+
+.mobile_menu_list>ul li {
+    padding: 1em 0;
+    letter-spacing: 2px;
+}
+
+
+
 @media(min-width: 1280px) {
     .desktop_nav_container .hidden {
         display: inline-block;

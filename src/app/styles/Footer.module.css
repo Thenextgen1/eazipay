@@ -1,0 +1,30 @@
+.footer {
+    border-top: 1px solid #EAEAEA;
+}
+
+.social_links_container li {
+    @apply inline-block mr-4;
+}
+
+.footer h4 {
+    @apply text-xl font-medium tracking-[0.2px] mb-2;
+}
+
+.footer section>div ul li,
+.footer section>div ul li {
+    @apply mb-3;
+}
+
+.footer section>div ul {
+    @apply mt-4 leading-[24px] text-[#7C7C7C];
+}
+
+.footer section>div {
+    @apply mt-4;
+}
+
+.send_container {
+    background-image: url(/images/send.svg);
+    background-repeat: no-repeat;
+    background-position: 94% center;
+}
