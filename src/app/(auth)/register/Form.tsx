@@ -163,7 +163,7 @@ const Form = () => {
         {message && <small className="block text-red-600">{message}</small>}
         <button
           type="submit"
-          className="text-center my-12 flex-1 w-full bg-[#2c6e49] hover:bg-lightColor hover:font-semibold rounded-md p-[1rem] px-4 mx-2  text-white cursor-pointer"
+          className="text-center my-12 flex-1 w-full bg-eaziGreen hover:bg-lightColor hover:font-semibold rounded-md p-[1rem] px-4 mx-2  text-white cursor-pointer"
         >
           Register
         </button>

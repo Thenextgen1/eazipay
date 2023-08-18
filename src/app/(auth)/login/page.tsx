@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Login() {
   return (
-    <main className="max-w-sm mx-auto">
+    <main className="max-w-sm pb-12 mx-auto">
       <section>
         <Form />
       </section>

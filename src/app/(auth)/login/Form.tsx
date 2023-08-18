@@ -108,7 +108,7 @@ const Form = () => {
           type="submit"
           className="w-full flex justify-center items-center"
         >
-          <span className="text-center flex-1   mt-6 bg-[#2c6e49] hover:bg-lightColor hover:font-semibold rounded-md p-[1rem] px-4  text-white cursor-pointer">
+          <span className="text-center flex-1   mt-6 bg-eaziGreen hover:bg-lightColor hover:font-semibold rounded-md p-[1rem] px-4  text-white cursor-pointer">
             Log in
           </span>
         </button>
