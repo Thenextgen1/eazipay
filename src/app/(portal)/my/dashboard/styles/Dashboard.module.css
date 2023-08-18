@@ -8,7 +8,7 @@
 }
 
 .quick_actions {
-    @apply mt-9 grid grid-cols-1;
+    @apply mt-9 grid grid-cols-1 gap-2;
 }
 
 .quick_actions li {

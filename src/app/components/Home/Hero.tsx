@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center 3xl:max-w-[1740px] 3xl:mx-auto 3xl:px-0  px-6 lg:pl-24 xl:pl-36 lg:pr-0 my-6">
+    <div className="flex flex-col lg:flex-row items-center 3xl:max-w-[1740px] 3xl:mx-auto 3xl:px-0  px-6 lg:pl-24 xl:pl-28 lg:pr-0 my-6">
       <div className="flex-1 text-center lg:text-left">
         <h2
           className={`${madeMellow.variable} font-madeMellow max-w-[500px] w-full text-3xl sm:text-5xl lg:text-[64px]  lg:leading-[72px] font-medium text-[#292A29]`}

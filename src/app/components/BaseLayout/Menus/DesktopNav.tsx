@@ -5,7 +5,7 @@ import styles from "@/app/styles/Nav.module.css";
 const DesktopNav = () => {
   return (
     <nav
-      className={`${styles.desktop_nav_container} hidden lg:pl-24 xl:px-36 px-6 3xl:max-w-[1740px]  3xl:px-0  3xl:mx-auto lg:flex justify-between items-center py-6`}
+      className={`${styles.desktop_nav_container} hidden lg:pl-24 xl:px-28 px-6 3xl:max-w-[1740px]  3xl:px-0  3xl:mx-auto lg:flex justify-between items-center py-6`}
     >
       <div className="flex items-center">
         <h1>

@@ -8,7 +8,7 @@ import Facebook from "../svgs/Facebook";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <section className="flex justify-between lg:flex-row flex-col py-12 xl:py-20 lg:pl-24 xl:px-36 px-6 3xl:max-w-[1740px]  3xl:px-0  3xl:mx-auto ">
+      <section className="flex justify-between lg:flex-row flex-col py-12 xl:py-20 lg:pl-24 xl:px-28 px-6 3xl:max-w-[1740px]  3xl:px-0  3xl:mx-auto ">
         <div>
           <h4>
             <Image
