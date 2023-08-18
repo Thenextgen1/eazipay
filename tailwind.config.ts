@@ -32,7 +32,7 @@ const config: Config = {
         chart: "0px 9px 18px 0px rgba(170, 170, 170, 0.15)",
       },
       screens: {
-        "3xl": "1840px",
+        "3xl": "2256px",
       },
     },
   },
