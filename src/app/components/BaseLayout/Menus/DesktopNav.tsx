@@ -14,12 +14,14 @@ const DesktopNav = () => {
     >
       <div className="flex items-center">
         <h1>
-          <Image
-            width={122}
-            height={32}
-            alt="logo"
-            src="/images/eazipaylogo.svg"
-          />
+          <Link href="/">
+            <Image
+              width={122}
+              height={32}
+              alt="logo"
+              src="/images/eazipaylogo.svg"
+            />
+          </Link>
         </h1>
         <ul className="text-eaziDark ml-10">
           <li>Individual</li>

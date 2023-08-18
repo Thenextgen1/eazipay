@@ -16,12 +16,14 @@ const MobileNav = () => {
   return (
     <nav className="flex max-w-3xl mx-auto sm:p-16 justify-between items-center lg:hidden p-6 cursor-pointer">
       <h1 className=" font-semibold tracking-wider sm:text-lg z-[100]">
-        <Image
-          width={122}
-          height={32}
-          alt="logo"
-          src="/images/eazipaylogo.svg"
-        />
+        <Link href="/">
+          <Image
+            width={122}
+            height={32}
+            alt="logo"
+            src="/images/eazipaylogo.svg"
+          />
+        </Link>
       </h1>
       <div className="z-[100] relative">
         <Hamburger
