@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import LineChart from "./components/LineChart";
+import Search from "./components/Search";
 
 export default function Dashboard() {
   return (
@@ -17,6 +18,9 @@ export default function Dashboard() {
       </section>
       <section className="mt-12">
         <LineChart />
+      </section>
+      <section className="mt-12">
+        <Search />
       </section>
     </main>
   );
