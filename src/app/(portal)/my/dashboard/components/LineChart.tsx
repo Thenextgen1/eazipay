@@ -1,14 +1,94 @@
+"use client";
+
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  ChartOptions,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+import { data } from "@/app/data/line";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+);
+
+const options: ChartOptions<"line"> = {
+  layout: {
+    padding: 20,
+  },
+  scales: {
+    x: {
+      grid: {
+        display: false,
+      },
+      ticks: {},
+
+      title: {
+        display: true,
+        color: "#11453B",
+        text: "Month",
+        font: {
+          family: "aaeonik",
+          size: 16,
+          weight: "bold",
+          lineHeight: 1.2,
+        },
+        padding: { top: 10, bottom: 0 },
+      },
+    },
+    y: {
+      min: 0,
+      max: 200,
+
+      grid: {
+        color: "#DDDEDD",
+      },
+
+      title: {
+        display: true,
+        color: "#515251",
+        text: "Value in (M)",
+        font: {
+          family: "aeonik",
+          size: 16,
+          weight: "bold",
+          lineHeight: 1.2,
+        },
+        padding: { bottom: 10, top: 0 },
+      },
+    },
+  },
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+  maintainAspectRatio: false,
+};
+
 const LineChart = () => {
   return (
     <div className="bg-white rounded-2xl lg:p-12 p-6">
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-wrap">
         <p>
           <span className="font-medium mb-4 text-eaziDark">Inflow</span>
           <span className="block text-[#219653] my-2 text-lg font-bold lg:text-[28px]">
             N1,567,552
           </span>
         </p>
-        <p>
+        <p className="mx-2">
           <span className="font-medium mb-4 text-eaziDark">Outflow</span>
           <span className="block text-[#EF4444] my-2 font-bold text-lg lg:text-[28px]">
             N1,567,552
@@ -34,7 +114,12 @@ const LineChart = () => {
           </span>
         </p>
       </div>
-      <div></div>
+      <div className="mt-12 h-[240px]">
+        <Line
+          data={data}
+          options={options}
+        />
+      </div>
     </div>
   );
 };
