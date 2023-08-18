@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F9FAFC;
+}
+
+svg {
+  @apply inline
+}
+
+input {
+  @apply bg-transparent outline-none;
+}
