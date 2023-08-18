@@ -15,3 +15,7 @@ body {
 svg {
   @apply inline
 }
+
+input {
+  @apply bg-transparent outline-none;
+}

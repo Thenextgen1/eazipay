@@ -1,6 +1,7 @@
-import Footer from "./components/BaseLayout/Footer";
-import Header from "./components/BaseLayout/Header";
-import { aeonik, madeMellow } from "./fonts";
+import Footer from "../components/BaseLayout/Footer";
+import Header from "../components/BaseLayout/Header";
+import SideBar from "../components/Dashboard/SideBar";
+import { aeonik, madeMellow } from "../fonts";
 import "./globals.css";
 
 export default function RootLayout({
