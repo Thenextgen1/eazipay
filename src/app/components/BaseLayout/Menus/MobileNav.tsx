@@ -11,7 +11,7 @@ const MobileNav = () => {
 
   return (
     <nav className="flex max-w-3xl mx-auto sm:p-16 justify-between items-center lg:hidden p-6 cursor-pointer">
-      <h1 className=" font-semibold tracking-wider sm:text-lg z-20">
+      <h1 className=" font-semibold tracking-wider sm:text-lg z-[100]">
         <Image
           width={122}
           height={32}
@@ -19,7 +19,7 @@ const MobileNav = () => {
           src="/images/eazipaylogo.svg"
         />
       </h1>
-      <div>
+      <div className="z-[100] relative">
         <Hamburger
           size={25}
           label="Show menu"
