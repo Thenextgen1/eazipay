@@ -1,8 +1,16 @@
+import { authOptions } from "@/app/utilities/auth";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 import Hero from "./components/Hero";
 import LineChart from "./components/LineChart";
 import Search from "./components/Search";
 
-export default function Dashboard() {
+export default async function Dashboard() {
+  const session = await getServerSession(authOptions);
+  if (!session) {
+    redirect("/login/?callbackUrl=/my/dashboard");
+  }
+
   return (
     <main className="lg:pl-80 lg:pr-12 px-4 sm:px-6 xl:pr-24 lg:z-[100] relative">
       <section className="mt-12">

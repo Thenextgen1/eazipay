@@ -21,6 +21,18 @@
 
 }
 
+.search_container {
+    background-image: url(/images/search.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.showcase {
+    background-image: url(/images/showcase-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media(min-width: 1024px) {
     .quick_actions {
         @apply grid-cols-2;

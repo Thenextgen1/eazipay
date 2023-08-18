@@ -4,7 +4,9 @@ const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row">
       <div className="flex-1">
-        <div className="p-6 lg:py-10 rounded-3xl bg-[#11453B] lg:mr-8 shadow-container">
+        <div
+          className={`${styles.showcase} p-6 lg:py-10 rounded-3xl bg-[#11453B] lg:mr-8 shadow-container`}
+        >
           <p className="text-eaziMint font-medium mb-3">Wallet Balance</p>
           <div className="flex flex-col sm:flex-row justify-between sm:items-center">
             <p className="font-bold text-2xl xl:text-[32px] text-white">

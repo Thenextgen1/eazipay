@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import styles from "@/app/styles/Home.module.css";
 import Card from "../components/Home/Card";
 import Hero from "../components/Home/Hero";
+
+export const metadata: Metadata = {
+  title: "Welcome to EaziPay",
+};
 
 export default function Home() {
   return (

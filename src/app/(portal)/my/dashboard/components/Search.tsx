@@ -1,3 +1,5 @@
+import styles from "../styles/Dashboard.module.css";
+
 const Search = () => {
   return (
     <div className="mb-6">
@@ -5,11 +7,13 @@ const Search = () => {
         Recent Activities
       </p>
       <div className="flex mt-4 lg:mt-8  flex-col lg:items-center lg:flex-row">
-        <div className=" border-[1px] flex-grow lg:mr-4  px-4 lg:px-8 py-[10px] border-[#B5B6B5] rounded-2xl bg-white border-solid ">
+        <div
+          className={`${styles.search_container} pr-12 border-[1px] flex-grow lg:mr-4  px-4 lg:pl-8 py-[10px] border-[#B5B6B5] rounded-2xl bg-white border-solid`}
+        >
           <input
             type="text"
             placeholder="Search employee"
-            className="w-full outline-none placeholder:text-sm placeholder:text-[#B9BBC0]"
+            className="w-[70%] md:w-[85%] outline-none placeholder:text-sm placeholder:text-[#B9BBC0]"
           />
         </div>
         <p className="py-[10px] rounded-2xl border-[#B5B6B5] mt-2 lg:mt-0 h-full bg-white border-[1px]  text-[#8D8E8D] text-sm font-medium px-4">
