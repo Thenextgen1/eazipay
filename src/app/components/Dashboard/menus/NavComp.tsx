@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "@/app/styles/SideBar.module.css";
-import DOMPurify from "dompurify";
+import DOMPurify from "isomorphic-dompurify";
 
 const sideBarLinks = [
   {
